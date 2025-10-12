@@ -121,6 +121,45 @@
        else {
         document.writeln("F");
        }
+
+       // JavaScript switch case/statement
+       document.writeln("<br>");
+       document.writeln(".........Start switch Statement.......");
+       var GradeMarks = 39;
+       switch (true) {
+        case (GradeMarks < 0 || GradeMarks > 100):
+            document.writeln("<br>");
+            document.writeln("Please input valid digit 0 to 100.");
+            break;
+        case (GradeMarks <= 100 && GradeMarks >= 80):
+            document.writeln("<br>");
+            document.writeln("A+");
+            break;
+        case (GradeMarks < 80 && GradeMarks >= 70):
+            document.writeln("<br>");
+            document.writeln("A");
+            break;
+        case (GradeMarks < 70 && GradeMarks >= 60):
+            document.writeln("<br>");
+            document.writeln("A-");
+            break;
+        case (GradeMarks < 60 && GradeMarks >= 50):
+            document.writeln("<br>");
+            document.writeln("B");
+            break;
+        case (GradeMarks < 50 && GradeMarks >= 40):
+            document.writeln("<br>");
+            document.writeln("C");
+            break;
+        case (GradeMarks < 40 && GradeMarks >= 33):
+            document.writeln("<br>");
+            document.writeln("D");
+            break;
+        default:
+            document.writeln("<br>");
+            document.writeln("F");
+            break;
+       }
     </script>
 </body>
 </html>
