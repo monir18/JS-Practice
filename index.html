@@ -171,6 +171,9 @@
 
        document.writeln("<br>");
        for (let index = 0; index < 10; index++) {
+        if (index === 8) {
+            break;
+        }
         if (index === 5 || index === 7) { // === means value with datatype compare, == only value compare.
             continue;
         }
