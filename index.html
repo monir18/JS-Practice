@@ -217,19 +217,23 @@
         } while (x < 4);
 
         // Simple Function
-        function add_two_numbers(a) {
+        function add_two_number() {
             var a = 201;
             var b = 30;
             var sum = a + b;
-            document.writeln(sum, "<br>");
+            document.writeln(sum + "<br>");
         }
         // function calling
-        add_two_numbers();
-        add_two_numbers();
-        add_two_numbers();
-        add_two_numbers();
-        add_two_numbers();
-        add_two_numbers();
+        add_two_number();
+
+        // parameter pass
+        function add_two_numbers(num1, num2) {
+            var sum = num1 + num2
+            document.writeln(sum + "<br>");
+        }
+
+        add_two_numbers(10, 20);
+        add_two_numbers(101, 201);
     </script>
 </body>
 </html>
