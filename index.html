@@ -245,7 +245,32 @@
         function name(n1,n2) {
             return n1 + n2;
         }
-        document.writeln(2,3);
+        document.writeln(name(2,3));
+
+        document.writeln("<br>");
+
+        function name_return() {
+            return "Monir"
+        }
+        
+        var new_value = name_return() + " L";
+        document.writeln(name_return());
+        document.writeln("<br>");
+        document.writeln(new_value);
+        document.writeln("<br>");
+        // JavaScript Object
+        var my_pc = {
+            brand : "HP",
+            screen : "14.5",
+            is_laptop : true,
+            ram : "8 GB",
+            disk : "500GB",
+            is_SSD : true,
+            processor : "core I-7"
+        };
+
+        document.writeln(my_pc["brand"]);
+        document.writeln(my_pc.disk);
     </script>
 </body>
 </html>
