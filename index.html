@@ -329,7 +329,22 @@
         var titleArray = Array.from(title);
         document.writeln(title + "<br>");
         document.writeln(titleArray + "<br>");
-        document.writeln(titleArray[16]);
+        document.writeln(titleArray[16] + "<br>");
+
+        // Array filter() method
+        var num_array = [30,32,40,50,55,60,80,90];
+        var result = num_array.filter(function(params) {
+            return params < 50;
+        });
+
+        document.writeln(result + "<br>");
+
+        var marks = [50,40,45,37,20];
+        function check(value){
+            return value > 50;
+        }
+        var filtering = marks.filter(check);
+        document.writeln(filtering);
     </script>
 </body>
 </html>
