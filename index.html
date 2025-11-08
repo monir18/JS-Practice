@@ -344,7 +344,16 @@
             return value > 50;
         }
         var filtering = marks.filter(check);
-        document.writeln(filtering);
+        document.writeln(filtering + "<br>");
+
+        // Array find() method
+        var result = num_array.find(function(value) {
+            return value < 80;
+        });
+        document.write("Array find() method" + "<br>");
+        document.writeln(result + "<br>");
+
+        
     </script>
 </body>
 </html>
