@@ -353,7 +353,12 @@
         document.write("Array find() method" + "<br>");
         document.writeln(result + "<br>");
 
-        
+        // Array findIndex() method
+        var output = num_array.findIndex(function (value) {
+            return value < 35;
+        });
+        document.write("Array findIndex() method" + "<br>");
+        document.writeln(output);
     </script>
 </body>
 </html>
