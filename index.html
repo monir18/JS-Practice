@@ -365,8 +365,16 @@
         document.writeln("-------------------------" + "<br>")
         var arr = [5,22,19,25,34];
         arr.forEach(function (fetch) {
-            document.writeln(fetch);
+            document.writeln(fetch + "<br>");
         });
+
+        // Array includes() method
+        var result = arr.includes(100);
+        document.writeln(result);
+
+        // Array indexof() method
+        var result = arr.indexOf(22);
+        document.writeln(result);
     </script>
 </body>
 </html>
