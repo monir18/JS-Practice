@@ -358,7 +358,15 @@
             return value < 35;
         });
         document.write("Array findIndex() method" + "<br>");
-        document.writeln(output);
+        document.writeln(output + "<br>");
+
+        // Array forEach()
+        document.writeln("forEach Method" + "<br>");
+        document.writeln("-------------------------" + "<br>")
+        var arr = [5,22,19,25,34];
+        arr.forEach(function (fetch) {
+            document.writeln(fetch);
+        });
     </script>
 </body>
 </html>
